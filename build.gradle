@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group = 'com.jhegg.reference.shiro.ldap-ssl-example'
+
+dependencies {
+  compile 'org.apache.shiro:shiro-core:1.2.1'
+  runtime 'ch.qos.logback:logback-classic:1.0.9'
+  runtime 'commons-logging:commons-logging:1.1.1'
+}
+
+defaultTasks 'build'
+
+repositories {
+  mavenCentral()
+}
+
+task wrapper(type: org.gradle.api.tasks.wrapper.Wrapper) {
+  gradleVersion = '1.4'
+  jarFile = '.wrapper/gradle-wrapper.jar'
+  description = 'Builds the gradlew wrapper'
+}
+
