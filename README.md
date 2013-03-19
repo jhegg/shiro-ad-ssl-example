@@ -3,7 +3,7 @@ shiro-ad-ssl-example
 
 An example of using Shiro to perform Active Directory authentication over SSL.
 
-This simple example illustrates how you can configure Shiro via the shiro.ini to do authentication and authorization using Active Directory over SSL. There are a few steps to be performed before you can run the LdapSslExample#main method.
+This simple example illustrates how you can configure Shiro via the shiro.ini to do authentication and authorization using Active Directory over SSL. It uses Shiro's ActiveDirectoryRealm for authc/authz, and Shiro's JndiLdapContextFactory for the connections to AD. There are a few steps to be performed before you can run the LdapSslExample#main method.
 
 **Prerequisites:**
 - An Active Directory server with some users and groups, configured to accept SSL connections.
